@@ -1,9 +1,10 @@
-class linkedlist:
-	def __init__(self,values):
-		self.values=values
-		self.next=None
+class linkedlist: # take class for linkedlist
+	def __init__(self,values): # deffine the object 
+		self.values=values # for value
+		self.next=None # for next linkedlist 
+		# self.previous=None # for previous linkedliist
 
-values1=linkedlist(7)
+values1=linkedlist(7) # give the values in linkedlist
 values2=linkedlist(1)
 values3=linkedlist(3)
 values4=linkedlist('d')
@@ -11,18 +12,26 @@ values5=linkedlist(5)
 values6=linkedlist(8)
 values7=linkedlist(0)
 
-values1.next=values2
+values1.next=values2 # for linked the linkedlist in next order
 values2.next=values3
 values3.next=values4
 values4.next=values5
 values5.next=values6
 values6.next=values7
 
-def countofvalues(values1):
-	count=1
-	while values1.next!=None:
-		count+=1
-		values1=values1.next
-	return(count)
+# values2.previous=values1 # for linked the linkedlist in previous order
+# values3.previous=values2
+# values4.previous=values3
+# values5.previous=values4
+# values6.previous=values5
+# values7.previous=values6
 
-print(countofvalues(values1))
+
+def countofvalues(values1): #deffine a fuction for count the length of linkedlist
+	count=1 # couner 
+	while values1.next!=None: # check the condition next value is not None 
+		count+=1 # count updating
+		values1=values1.next # updating 
+	return(count) # return the count
+
+print(countofvalues(values1))  # call the function
