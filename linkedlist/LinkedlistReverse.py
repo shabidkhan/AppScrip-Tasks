@@ -19,14 +19,27 @@ values5.previous=values4
 values6.previous=values5
 values7.previous=values6
 
-def ReverseLinkedList(values7): # deffine the fuction for reverse the linkedlist 
-	ReverseOfLinkedList=[] # for holding reverse linkedlist value
-	while values7.previous!=None: # check the condition it's not none
-		# print(values7.values)
-		ReverseOfLinkedList.append(values7.values) # push the value in ReverseOfLinkedList
-		values7=values7.previous # updating the  value of values7
-	# print(values7.values)
-	ReverseOfLinkedList.append(values7.values)
+values1.next=values2 # for linked the linkedlist in next order
+values2.next=values3
+values3.next=values4
+values4.next=values5
+values5.next=values6
+values6.next=values7
 
-	return ReverseOfLinkedList # return thhe reverse of linkedlist
-print(ReverseLinkedList(values7))
+values1.next=values1.previous
+values2.next=values2.previous
+values3.next=values3.previous
+values4.next=values4.previous
+values5.next=values5.previous
+values6.next=values6.previous
+values7.next=values7.previous
+
+
+print(values7.next)
+while values7.next!=None: # check the condition next value is not None 
+	print(values7.next.values)
+	values7=values7.next # updating 
+
+
+
+
