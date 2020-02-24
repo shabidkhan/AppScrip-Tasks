@@ -27,8 +27,6 @@ def countofvalues(values1): #deffine a fuction for count the length of linkedlis
 	return(count) # return the count
 
 count=countofvalues(values1)
-for i in range(count//2):
+for i in range(count-3):
 	values1=values1.next # updating 
 print(values1.values)
-if count%2==0:
-	print(values1.next.values)
